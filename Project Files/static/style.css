@@ -1,0 +1,828 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+   min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+    background-size:400% 400%;
+    animation:gradientBG 15s ease infinite;
+    color:#fff;
+}
+/* Animated Background */
+@keyframes gradientBG{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+/* Container */
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+/* Glass Card */
+.card{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:45px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.20);
+    animation:fadeUp 1s ease;
+}
+/* Animation */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* Heading */
+h1{
+    text-align:center;
+    font-size:48px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+/* Subtitle */
+h2{
+    text-align:center;
+    color:#FFD369;
+    margin-bottom:20px;
+    font-weight:500;
+}
+/* Paragraph */
+p{
+    font-size:18px;
+    line-height:30px;
+    text-align:center;
+    color:#f5f5f5;
+    margin-bottom:25px;
+}
+/* Horizontal Line */
+hr{
+    border:none;
+    height:2px;
+    background:rgba(255,255,255,.20);
+    margin:30px 0;
+}
+/* Feature List */
+ul{
+    list-style:none;
+    margin-top:20px;
+}
+ul li{
+    font-size:18px;
+    padding:12px;
+    color:white;
+    border-bottom:1px solid rgba(255,255,255,.10);
+}
+/* Hero Section */
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+.hero p{
+    font-size:20px;
+    color:#f1f1f1;
+}
+
+/* Feature Cards */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.feature-card h3{
+
+    margin-top:15px;
+
+    color:#FFD369;
+
+}
+
+.feature-card p{
+
+    font-size:15px;
+
+    line-height:24px;
+
+}
+/* ==========================================================
+   SMART LENDER - PREMIUM UI
+   style.css (Part 2)
+==========================================================*/
+
+/* Form Layout */
+
+form{
+
+    margin-top:25px;
+
+}
+
+/* Labels */
+
+label{
+
+    display:block;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+}
+
+/* Input Fields */
+
+input,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,0.12);
+
+    color:#ffffff;
+
+    transition:0.3s;
+
+    border:2px solid transparent;
+
+}
+
+/* Placeholder */
+
+input::placeholder{
+
+    color:#dddddd;
+
+}
+
+/* Dropdown Options */
+
+select{
+
+    cursor:pointer;
+
+}
+
+select option{
+
+    color:#000;
+
+    background:#ffffff;
+
+}
+
+/* Focus Effect */
+
+input:focus,
+select:focus{
+
+    border:2px solid #FFD369;
+
+    background:rgba(255,255,255,0.18);
+
+    box-shadow:0 0 12px rgba(255,211,105,.5);
+
+}
+
+/* Two Column Layout */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+/* Full Width Fields */
+
+.full-width{
+
+    grid-column:1 / span 2;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#00b09b,#96c93d);
+
+    transition:0.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
+
+/* Secondary Button */
+
+.btn-secondary{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:#ffffff;
+
+    background:linear-gradient(135deg,#4b6cb7,#182848);
+
+    transition:0.4s;
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Button Links */
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* Input Animation */
+
+input:hover,
+select:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* Small Section Heading */
+
+.section-title{
+
+    margin-top:30px;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+    color:#FFD369;
+
+    text-align:left;
+
+}
+
+/* Info Box */
+
+.info-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.10);
+
+    border-left:5px solid #FFD369;
+
+}
+
+.info-box h3{
+
+    margin-bottom:10px;
+
+    color:#FFD369;
+
+}
+
+.info-box p{
+
+    text-align:left;
+
+    font-size:15px;
+
+    line-height:26px;
+
+}
+
+/* Smooth Transition */
+
+.card,
+.feature-card,
+.btn,
+.btn-secondary,
+input,
+select{
+
+    transition:all .35s ease;
+
+}
+
+/* ==========================================================
+   SMART LENDER - PREMIUM UI
+   style.css (Part 3)
+==========================================================*/
+
+/* ==========================
+   Result Cards
+========================== */
+
+.success-box{
+
+    margin-top:25px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+
+    color:white;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+    animation:zoomIn .8s ease;
+
+}
+
+.error-box{
+
+    margin-top:25px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#cb2d3e,#ef473a);
+
+    color:white;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+    animation:zoomIn .8s ease;
+
+}
+
+.warning-box{
+
+    margin-top:25px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#f7971e,#ffd200);
+
+    color:#222;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+}
+
+/* ==========================
+   Animation
+========================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================
+   Statistics Cards
+========================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.stat-card{
+
+    padding:25px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.12);
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.20);
+
+}
+
+.stat-card h2{
+
+    color:#FFD369;
+
+    font-size:32px;
+
+}
+
+.stat-card p{
+
+    font-size:15px;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+.footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#dddddd;
+
+}
+
+/* ==========================
+   Tables (Future Use)
+========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+th{
+
+    background:#FFD369;
+
+    color:#222;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid rgba(255,255,255,.20);
+
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#203a43;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#FFD369;
+
+    border-radius:10px;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+.card{
+
+    padding:30px;
+
+}
+
+h1{
+
+    font-size:38px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+    padding:20px;
+
+}
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.full-width{
+
+    grid-column:auto;
+
+}
+
+h1{
+
+    font-size:32px;
+
+}
+
+h2{
+
+    font-size:22px;
+
+}
+
+.btn{
+
+    font-size:16px;
+
+}
+
+.btn-secondary{
+
+    font-size:16px;
+
+}
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.card{
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+p{
+
+    font-size:15px;
+
+}
+
+input,
+select{
+
+    font-size:14px;
+
+    padding:12px;
+
+}
+
+.btn{
+
+    padding:14px;
+
+}
+
+.btn-secondary{
+
+    padding:14px;
+
+}
+
+}
+
+/* ==========================
+   Floating Card Effect
+========================== */
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================
+   Feature Card Icon
+========================== */
+
+.feature-card i{
+
+    font-size:45px;
+
+    color:#FFD369;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   Result Heading
+========================== */
+
+.result-card h2{
+
+    font-size:32px;
+
+}
+
+/* ==========================
+   End
+========================== */
